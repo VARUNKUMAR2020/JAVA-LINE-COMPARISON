@@ -56,7 +56,7 @@ public class LineComparison {
         double lengthab = Math.sqrt(a + b);
         System.out.println("length of the line AB is " + lengthab);
 
-        System.out.println((lengthab == lengthxy) ? "Lines are Equal" : "Lines are not equal");
+        System.out.println((lengthab == lengthxy) ? "Lines are Equal" : (lengthab > lengthxy)? "Line AB is greater":"Line XY is greater");
 
     }
 }
